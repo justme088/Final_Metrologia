@@ -27,7 +27,7 @@ No busca ser una solución industrial completa, sino una **maqueta demostrativa*
 
 **Node-RED**:
 - Versión usada de NodeJS: v18.20.8
-- Tener instalado sqlite3 en Node-RED y añadirlo en contexto global dentro de settings.js en Node-RED
+- Tener instalado sqlite3 en Node-RED y añadirlo en contexto global dentro de settings.js
 - Instalar en Palette: node-red-contrib-ui-led, node-red-contrib-zip, node-red-dashboard
 
 **Librerías usadas en el Arduino Mega**:
