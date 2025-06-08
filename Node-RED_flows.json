@@ -1,0 +1,3144 @@
+[
+    {
+        "id": "2cb18b3f5170209b",
+        "type": "tab",
+        "label": "Flow 0",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "814da731331121d6",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "9a63bb3a153bd227",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "599c1d1ebfc1a92c",
+        "type": "subflow",
+        "name": "sqlite",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "540c842f56caed65"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 360,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "540c842f56caed65",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [
+            {
+                "name": "Fixed_Statement",
+                "type": "str",
+                "value": ""
+            }
+        ],
+        "meta": {},
+        "color": "#F3B567",
+        "icon": "font-awesome/fa-database"
+    },
+    {
+        "id": "9436d1da91ce27f1",
+        "type": "group",
+        "z": "814da731331121d6",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "a4c765bb168e2d02",
+            "d2a8f8255fbb768b",
+            "d945cf0325c776c5",
+            "d5e857183b364dcd"
+        ],
+        "x": 94,
+        "y": 19,
+        "w": 532,
+        "h": 122
+    },
+    {
+        "id": "8b9ad08c79340812",
+        "type": "ui_tab",
+        "name": "Sensores",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "6a6c247090e947f9",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "a22d3f00c83d79e3",
+        "type": "ui_group",
+        "name": "DatosEstadisticosA",
+        "tab": "8b9ad08c79340812",
+        "order": 5,
+        "disp": false,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2da0bbb07e8891cb",
+        "type": "ui_group",
+        "name": "DataEntrante",
+        "tab": "8b9ad08c79340812",
+        "order": 2,
+        "disp": false,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "17ccd7350f4228cf",
+        "type": "ui_group",
+        "name": "DistribucionMediciones",
+        "tab": "8b9ad08c79340812",
+        "order": 4,
+        "disp": false,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "35dd871a84afb4f6",
+        "type": "ui_group",
+        "name": "GrafTiempo",
+        "tab": "8b9ad08c79340812",
+        "order": 3,
+        "disp": false,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "115113b1c4689ed3",
+        "type": "ui_group",
+        "name": "GrafFrecuencia",
+        "tab": "8b9ad08c79340812",
+        "order": 6,
+        "disp": false,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "439596f5454791b9",
+        "type": "ui_group",
+        "name": "DatosEstadisticosB",
+        "tab": "8b9ad08c79340812",
+        "order": 7,
+        "disp": false,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9540489402d8e02f",
+        "type": "ui_spacer",
+        "z": "814da731331121d6",
+        "name": "spacer",
+        "group": "a22d3f00c83d79e3",
+        "order": 1,
+        "width": "6",
+        "height": "1"
+    },
+    {
+        "id": "99a0581103f70d88",
+        "type": "ui_group",
+        "name": "GrafTendenciaLineal",
+        "tab": "8b9ad08c79340812",
+        "order": 8,
+        "disp": false,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "81420f405cbc7087",
+        "type": "ui_group",
+        "name": "GrafBox",
+        "tab": "8b9ad08c79340812",
+        "order": 9,
+        "disp": false,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3f8067ba25612ccd",
+        "type": "ui_spacer",
+        "z": "814da731331121d6",
+        "name": "spacer",
+        "group": "99a0581103f70d88",
+        "order": 7,
+        "width": "6",
+        "height": "1"
+    },
+    {
+        "id": "35d0cfdeb65deb1a",
+        "type": "ui_spacer",
+        "z": "814da731331121d6",
+        "name": "spacer",
+        "group": "439596f5454791b9",
+        "order": 5,
+        "width": "6",
+        "height": "1"
+    },
+    {
+        "id": "6f61958bca9d7a1e",
+        "type": "ui_spacer",
+        "z": "814da731331121d6",
+        "name": "spacer",
+        "group": "439596f5454791b9",
+        "order": 8,
+        "width": "6",
+        "height": "1"
+    },
+    {
+        "id": "3c8018524d897a51",
+        "type": "ui_spacer",
+        "z": "814da731331121d6",
+        "name": "spacer",
+        "group": "439596f5454791b9",
+        "order": 1,
+        "width": "6",
+        "height": "1"
+    },
+    {
+        "id": "c8ca4dfe67ec9c02",
+        "type": "ui_group",
+        "name": "Opciones",
+        "tab": "8b9ad08c79340812",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a4413d8c04731c7d",
+        "type": "ui_spacer",
+        "z": "814da731331121d6",
+        "name": "spacer",
+        "group": "c8ca4dfe67ec9c02",
+        "order": 1,
+        "width": "6",
+        "height": "1"
+    },
+    {
+        "id": "31bc332fb1d7efc8",
+        "type": "ui_spacer",
+        "z": "814da731331121d6",
+        "name": "spacer",
+        "group": "c8ca4dfe67ec9c02",
+        "order": 3,
+        "width": "6",
+        "height": "1"
+    },
+    {
+        "id": "9c7bf1cf4b4795aa",
+        "type": "ui_spacer",
+        "z": "814da731331121d6",
+        "name": "spacer",
+        "group": "c8ca4dfe67ec9c02",
+        "order": 5,
+        "width": "6",
+        "height": "1"
+    },
+    {
+        "id": "44f874bdf2e3533d",
+        "type": "ui_spacer",
+        "z": "814da731331121d6",
+        "name": "spacer",
+        "group": "c8ca4dfe67ec9c02",
+        "order": 7,
+        "width": "6",
+        "height": "1"
+    },
+    {
+        "id": "863d6af77889d50c",
+        "type": "ui_group",
+        "name": "Tabla",
+        "tab": "8b9ad08c79340812",
+        "order": 10,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c390c263c5b85206",
+        "type": "ui_spacer",
+        "z": "814da731331121d6",
+        "name": "spacer",
+        "group": "863d6af77889d50c",
+        "order": 1,
+        "width": "6",
+        "height": "1"
+    },
+    {
+        "id": "2be532ba8eb7f8fe",
+        "type": "ui_spacer",
+        "z": "814da731331121d6",
+        "name": "spacer",
+        "group": "863d6af77889d50c",
+        "order": 2,
+        "width": "6",
+        "height": "1"
+    },
+    {
+        "id": "e6c5839f4ca09222",
+        "type": "ui_spacer",
+        "z": "814da731331121d6",
+        "name": "spacer",
+        "group": "863d6af77889d50c",
+        "order": 4,
+        "width": "6",
+        "height": "1"
+    },
+    {
+        "id": "554408476fdf97ae",
+        "type": "ui_spacer",
+        "z": "814da731331121d6",
+        "name": "spacer",
+        "group": "863d6af77889d50c",
+        "order": 6,
+        "width": "6",
+        "height": "1"
+    },
+    {
+        "id": "eb927af5465a72c8",
+        "type": "ui_spacer",
+        "z": "814da731331121d6",
+        "name": "spacer",
+        "group": "863d6af77889d50c",
+        "order": 10,
+        "width": "6",
+        "height": "1"
+    },
+    {
+        "id": "1a003c430d9dcd38",
+        "type": "ui_spacer",
+        "z": "814da731331121d6",
+        "name": "spacer",
+        "group": "35dd871a84afb4f6",
+        "order": 2,
+        "width": "6",
+        "height": "1"
+    },
+    {
+        "id": "24fe9203abb4de08",
+        "type": "ui_spacer",
+        "z": "814da731331121d6",
+        "name": "spacer",
+        "group": "35dd871a84afb4f6",
+        "order": 5,
+        "width": "6",
+        "height": "1"
+    },
+    {
+        "id": "69c7ac656354b72d",
+        "type": "ui_spacer",
+        "z": "814da731331121d6",
+        "name": "spacer",
+        "group": "2da0bbb07e8891cb",
+        "order": 1,
+        "width": "6",
+        "height": "1"
+    },
+    {
+        "id": "a45cb9165ed8a4c3",
+        "type": "ui_spacer",
+        "z": "814da731331121d6",
+        "name": "spacer",
+        "group": "2da0bbb07e8891cb",
+        "order": 4,
+        "width": "6",
+        "height": "1"
+    },
+    {
+        "id": "bafd8e0471c5c491",
+        "type": "ui_spacer",
+        "z": "814da731331121d6",
+        "name": "spacer",
+        "group": "17ccd7350f4228cf",
+        "order": 2,
+        "width": "6",
+        "height": "1"
+    },
+    {
+        "id": "30dfb24ee45e53d5",
+        "type": "ui_spacer",
+        "z": "814da731331121d6",
+        "name": "spacer",
+        "group": "17ccd7350f4228cf",
+        "order": 5,
+        "width": "6",
+        "height": "1"
+    },
+    {
+        "id": "0532ef36421a1469",
+        "type": "ui_spacer",
+        "z": "814da731331121d6",
+        "name": "spacer",
+        "group": "a22d3f00c83d79e3",
+        "order": 4,
+        "width": "6",
+        "height": "1"
+    },
+    {
+        "id": "d3131737903804c0",
+        "type": "ui_spacer",
+        "z": "814da731331121d6",
+        "name": "spacer",
+        "group": "a22d3f00c83d79e3",
+        "order": 8,
+        "width": "6",
+        "height": "1"
+    },
+    {
+        "id": "0a44fd783f60d426",
+        "type": "ui_spacer",
+        "z": "814da731331121d6",
+        "name": "spacer",
+        "group": "115113b1c4689ed3",
+        "order": 5,
+        "width": "6",
+        "height": "1"
+    },
+    {
+        "id": "79ae1deef6115c15",
+        "type": "ui_spacer",
+        "z": "814da731331121d6",
+        "name": "spacer",
+        "group": "115113b1c4689ed3",
+        "order": 5,
+        "width": "6",
+        "height": "1"
+    },
+    {
+        "id": "5a56022cf30ea85a",
+        "type": "ui_tab",
+        "name": "Camara",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "16546885f9c3ce72",
+        "type": "ui_group",
+        "name": "Grabacion",
+        "tab": "5a56022cf30ea85a",
+        "order": 1,
+        "disp": false,
+        "width": "7",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0ecf349194eeba55",
+        "type": "ui_group",
+        "name": "Mediciones de Sensores",
+        "tab": "5a56022cf30ea85a",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2ef36036fc08b0e0",
+        "type": "ui_tab",
+        "name": "Doble vista",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "37e2c276aab3365d",
+        "type": "ui_group",
+        "name": "DV",
+        "tab": "2ef36036fc08b0e0",
+        "order": 1,
+        "disp": false,
+        "width": "30",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "126606e3b6eb5fb5",
+        "type": "serial-port",
+        "name": "",
+        "serialport": "/dev/bus/usb/002/002",
+        "serialbaud": "9600",
+        "databits": 8,
+        "parity": "none",
+        "stopbits": 1,
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": 10000
+    },
+    {
+        "id": "540c842f56caed65",
+        "type": "function",
+        "z": "599c1d1ebfc1a92c",
+        "name": "function 149",
+        "func": "const sqlite3 = global.get('sqlite3');\nconst dbPath = './datab.db'; // O usa global.get('dbPath') si lo configuraste en settings.js\n\n// Obtener el query desde una variable de entorno o msg.topic\nconst env_query = env.get('Fixed_Statement');\n\nif (msg.topic == '' && env_query == ''){\n    return null;\n}\n\nconst query = (env_query === '') ? msg.topic : env_query;\n\n// Verificar que se ha proporcionado un query SQL\nif (!query) {\n    node.error('No se ha proporcionado un query SQL.');\n    return null;\n}\n\n// Abrir la base de datos SQLite\nconst db = new sqlite3.Database(dbPath, (err) => {\n    if (err) {\n        node.error('Error al conectar a la base de datos SQLite', err);\n        return;\n    }\n\n    // Ejecutar el query\n    db.all(query, [], (err, rows) => {\n        if (err) {\n            node.error('Error al ejecutar el query', err);\n            db.close();\n            return;\n        }\n\n        // Pasar los resultados al siguiente nodo\n        msg.payload = { rows: rows };\n        db.close();\n        node.send(msg); // Enviar el mensaje al siguiente nodo\n    });\n});\n\n// No retornamos nada aquí porque `node.send` maneja la salida\nreturn null;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 210,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6ab6a9b18fe1e221",
+        "type": "function",
+        "z": "599c1d1ebfc1a92c",
+        "name": "function 6",
+        "func": "\nconst env_query = env.get('Fixed_Statement');\n\nif (msg.topic == '' && env_query == ''){\n    return null;\n}\n\nconst query = (env_query === '') ? msg.topic : env_query;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1edf7d521a188f23",
+        "type": "ui_template",
+        "z": "2cb18b3f5170209b",
+        "group": "16546885f9c3ce72",
+        "name": "",
+        "order": 0,
+        "width": "6",
+        "height": "7",
+        "format": "<div style=\"width: 100%; height: 100%; border: 1px solid #ccc;\">\n    <iframe id=\"videoFrame\" width=\"100%\" height=\"100%\" style=\"border: none;\"></iframe>\n</div>\n\n<script>\n(function(scope) {\n    scope.$watch('msg.payload', function(newVal) {\n        if (newVal) {\n            const iframe = document.getElementById(\"videoFrame\");\n            iframe.src = `http://${newVal}:8989/video`;\n        }\n    });\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 500,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "eefe3f4744601565",
+        "type": "function",
+        "z": "2cb18b3f5170209b",
+        "name": "function 28",
+        "func": "const os = global.get('os');\nmsg.payload = '';\n\nconst interfaces = os.networkInterfaces();\n\nfor (const name of Object.keys(interfaces)) {\n  for (const iface of interfaces[name]) {\n    if (iface.family === 'IPv4' && !iface.internal) {\n      console.log(`Tu IP local (${name}): ${iface.address}`);\n      \n      if (name == 'wlan0'){\n        msg.payload = iface.address;\n      }\n    }\n  }\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 80,
+        "wires": [
+            [
+                "1edf7d521a188f23"
+            ]
+        ]
+    },
+    {
+        "id": "e1d5c174ac449503",
+        "type": "inject",
+        "z": "2cb18b3f5170209b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.5",
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 130,
+        "y": 80,
+        "wires": [
+            [
+                "eefe3f4744601565"
+            ]
+        ]
+    },
+    {
+        "id": "4521657c1e44cf7a",
+        "type": "ui_text",
+        "z": "2cb18b3f5170209b",
+        "group": "0ecf349194eeba55",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Sensor 1",
+        "format": "{{msg.payload[0]}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 500,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "bc1849069d840afa",
+        "type": "ui_text",
+        "z": "2cb18b3f5170209b",
+        "group": "0ecf349194eeba55",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Sensor 2",
+        "format": "{{msg.payload[1]}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 500,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "9a4e2fa3fda48f4f",
+        "type": "ui_text",
+        "z": "2cb18b3f5170209b",
+        "group": "0ecf349194eeba55",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Sensor 3",
+        "format": "{{msg.payload[2]}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 500,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "cc4a8598f3b34269",
+        "type": "link in",
+        "z": "2cb18b3f5170209b",
+        "name": "link in 14",
+        "links": [
+            "d50c04b7ae1f253b"
+        ],
+        "x": 375,
+        "y": 200,
+        "wires": [
+            [
+                "4521657c1e44cf7a",
+                "bc1849069d840afa",
+                "9a4e2fa3fda48f4f"
+            ]
+        ]
+    },
+    {
+        "id": "b7609e09ea723406",
+        "type": "ui_template",
+        "z": "2cb18b3f5170209b",
+        "group": "37e2c276aab3365d",
+        "name": "",
+        "order": 0,
+        "width": "30",
+        "height": "15",
+        "format": "<div style=\"display: flex; width: 100%; height: 90vh;\">\n    <iframe src=\"/ui#!/0\" style=\"flex: 0.7; border: none;\"></iframe>\n    <iframe src=\"/ui#!/1\" style=\"flex: 0.3; border: none;\"></iframe>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 500,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a4c765bb168e2d02",
+        "type": "inject",
+        "z": "814da731331121d6",
+        "g": "9436d1da91ce27f1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.5",
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 190,
+        "y": 60,
+        "wires": [
+            [
+                "d2a8f8255fbb768b"
+            ]
+        ]
+    },
+    {
+        "id": "d2a8f8255fbb768b",
+        "type": "function",
+        "z": "814da731331121d6",
+        "g": "9436d1da91ce27f1",
+        "name": "function 1",
+        "func": "if (flow.get(\"switch_0\") == 1){\n\nfunction getRandomDecimal(min, max) {\n  return Math.random() * (max - min) + min;\n}\n\nvar temp = getRandomDecimal(23, 25);    // Temperatura\nvar humedad = getRandomDecimal(70, 72); // Humedad\nvar presion = getRandomDecimal(10, 12); // Presión (por ejemplo)\n\nvar resultado = [ parseFloat(temp.toFixed(2)), parseFloat(humedad.toFixed(2)), parseFloat(presion.toFixed(2))];\n\nmsg.payload = resultado;\n//console.log(resultado);\n\nreturn msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 60,
+        "wires": [
+            [
+                "d945cf0325c776c5"
+            ]
+        ]
+    },
+    {
+        "id": "d945cf0325c776c5",
+        "type": "debug",
+        "z": "814da731331121d6",
+        "g": "9436d1da91ce27f1",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 500,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "987d028eb93eeb12",
+        "type": "function",
+        "z": "814da731331121d6",
+        "name": "function 2",
+        "func": "if (flow.get(\"switch_0\") != 0){\n  flow.set(\"switch_0\", 0);\n} else if (flow.get(\"switch_0\") != 1){\n  flow.set(\"switch_0\", 1);\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 440,
+        "wires": [
+            [
+                "7a089334e170e17a"
+            ]
+        ]
+    },
+    {
+        "id": "5c03a3e93e7ea444",
+        "type": "debug",
+        "z": "814da731331121d6",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 920,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "7a089334e170e17a",
+        "type": "function",
+        "z": "814da731331121d6",
+        "name": "function 3",
+        "func": "msg.payload = flow.get(\"switch_0\");\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 440,
+        "wires": [
+            [
+                "5c03a3e93e7ea444",
+                "cbc7435644dc0746"
+            ]
+        ]
+    },
+    {
+        "id": "4a1051be8e96a08c",
+        "type": "ui_text_input",
+        "z": "814da731331121d6",
+        "name": "",
+        "label": "Cantidad de mediciones",
+        "tooltip": "",
+        "group": "2da0bbb07e8891cb",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "number",
+        "delay": "0",
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 670,
+        "y": 220,
+        "wires": [
+            [
+                "401dbef1fe2d252b"
+            ]
+        ]
+    },
+    {
+        "id": "985e3369570a2ecd",
+        "type": "inject",
+        "z": "814da731331121d6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 190,
+        "y": 220,
+        "wires": [
+            [
+                "8fb7243329859fbb",
+                "d7590115e8ff443f"
+            ]
+        ]
+    },
+    {
+        "id": "401dbef1fe2d252b",
+        "type": "function",
+        "z": "814da731331121d6",
+        "name": "function 5",
+        "func": "msg.payload = (msg.payload != null) ? msg.payload : 0;\n\nglobal.set(\"cantidad_mediciones_1\", parseInt(msg.payload.toFixed(0)));\n\nmsg.payload = parseInt(msg.payload.toFixed(0));\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 220,
+        "wires": [
+            [
+                "8fa56f847df43290"
+            ]
+        ]
+    },
+    {
+        "id": "8fa56f847df43290",
+        "type": "debug",
+        "z": "814da731331121d6",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1040,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "235e07b30e2729b6",
+        "type": "subflow:599c1d1ebfc1a92c",
+        "z": "814da731331121d6",
+        "name": "",
+        "x": 770,
+        "y": 680,
+        "wires": [
+            [
+                "2ef34a1aeaf929fc"
+            ]
+        ]
+    },
+    {
+        "id": "080a36ce48a1891b",
+        "type": "function",
+        "z": "814da731331121d6",
+        "name": "function 7",
+        "func": "let sensor_elegido = flow.get(\"sensor_actual\");\nvar sensor\n\nswitch (sensor_elegido){\n    case 'a':\n        sensor = 0;\n        break;\n    case 'b':\n        sensor = 1;\n        break;\n    case 'c':\n        sensor = 2;\n        break;\n    default:\n        sensor = 0;\n        break;\n}\n\n\nmsg.topic = `\n\nINSERT INTO mediciones_sensor_`+sensor_elegido+` (valor_medido, orden, tiempo)\nSELECT `+ String(msg.payload[sensor]) +`, IFNULL(MAX(orden), 0) + 1, datetime('now', 'localtime') FROM mediciones_sensor_`+sensor_elegido+`;\n\n\n`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 680,
+        "wires": [
+            [
+                "235e07b30e2729b6"
+            ]
+        ]
+    },
+    {
+        "id": "4a6797358b6672b3",
+        "type": "ui_template",
+        "z": "814da731331121d6",
+        "group": "2da0bbb07e8891cb",
+        "name": "Datos Entrantes",
+        "order": 3,
+        "width": "6",
+        "height": "5",
+        "format": "<style>\n    .tabla-scrollable {\n        max-height: 200px;\n        /* Altura máxima del cuadro */\n        overflow-y: auto;\n        /* Habilita scroll vertical si es necesario */\n        border: 1px solid #ccc;\n        /* Borde externo */\n        border-radius: 6px;\n    }\n\n    table {\n        width: 100%;\n        border-collapse: collapse;\n        font-family: sans-serif;\n        font-size: 14px;\n    }\n\n    thead {\n        background-color: #007acc;\n        color: white;\n        position: sticky;\n        top: 0;\n        /* Encabezado fijo */\n    }\n\n    th,\n    td {\n        padding: 8px 12px;\n        border-bottom: 1px solid #ddd;\n        text-align: left;\n    }\n\n    tr:hover {\n        background-color: #f5f5f5;\n    }\n</style>\n\n<div class=\"tabla-scrollable\">\n    <table>\n        <thead>\n            <tr>\n                <th>Valor Medido</th>\n                <th>Tiempo</th>\n            </tr>\n        </thead>\n        <tbody>\n            <tr ng-repeat=\"row in msg.payload\">\n                <td ng-repeat=\"item in row\">{{item}}</td>\n            </tr>\n        </tbody>\n    </table>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1700,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1f5130af925bbf00",
+        "type": "subflow:599c1d1ebfc1a92c",
+        "z": "814da731331121d6",
+        "name": "",
+        "x": 1070,
+        "y": 680,
+        "wires": [
+            [
+                "2147eeaca5a1a115",
+                "7070de3148006597"
+            ]
+        ]
+    },
+    {
+        "id": "7e35b5d17ce24476",
+        "type": "function",
+        "z": "814da731331121d6",
+        "name": "function 8",
+        "func": "let sensor_elegido = flow.get(\"sensor_actual\");\n\nmsg.topic = `\n\nDELETE FROM mediciones_sensor_a WHERE (SELECT MAX(orden) FROM mediciones_sensor_`+sensor_elegido+`) >= `+ String(global.get(\"cantidad_mediciones_1\")) +`;\n\n\n\n`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 860,
+        "wires": [
+            [
+                "2c99b344ee4f53a0"
+            ]
+        ]
+    },
+    {
+        "id": "2c99b344ee4f53a0",
+        "type": "subflow:599c1d1ebfc1a92c",
+        "z": "814da731331121d6",
+        "name": "",
+        "x": 550,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c8924dbb46dcd29a",
+        "type": "function",
+        "z": "814da731331121d6",
+        "name": "function 9",
+        "func": "msg.payload = msg.payload.rows.map(row => [\n    row.valor_medido,\n    row.tiempo\n]).reverse();\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1480,
+        "y": 680,
+        "wires": [
+            [
+                "4a6797358b6672b3"
+            ]
+        ]
+    },
+    {
+        "id": "45305ea5bb604b19",
+        "type": "delay",
+        "z": "814da731331121d6",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "10",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 410,
+        "y": 680,
+        "wires": [
+            [
+                "080a36ce48a1891b"
+            ]
+        ]
+    },
+    {
+        "id": "08cc8d48a98635eb",
+        "type": "ui_text",
+        "z": "814da731331121d6",
+        "group": "35dd871a84afb4f6",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Dato actual",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 590,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "5fe57641e099f19c",
+        "type": "subflow:599c1d1ebfc1a92c",
+        "z": "814da731331121d6",
+        "name": "",
+        "x": 550,
+        "y": 980,
+        "wires": [
+            [
+                "5def22ce76f4280d",
+                "aa8dd5ae1a9eee82"
+            ]
+        ]
+    },
+    {
+        "id": "5def22ce76f4280d",
+        "type": "ui_text",
+        "z": "814da731331121d6",
+        "group": "35dd871a84afb4f6",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Promedio X̄",
+        "format": "{{msg.payload.rows[0].promedio}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 750,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "e0aa35e0b38619c6",
+        "type": "subflow:599c1d1ebfc1a92c",
+        "z": "814da731331121d6",
+        "name": "",
+        "env": [
+            {
+                "name": "Fixed_Statement",
+                "value": "SELECT COUNT(*) AS cantidad_N, CASE WHEN COUNT(*) <= 1 THEN 0 ELSE ROUND( SQRT( SUM( (valor_medido - (SELECT AVG(valor_medido) FROM mediciones_sensor_a)) * (valor_medido - (SELECT AVG(valor_medido) FROM mediciones_sensor_a)) ) / (COUNT(*) - 1) ), 2 ) END AS desviacion_muestral FROM mediciones_sensor_a;",
+                "type": "str"
+            }
+        ],
+        "x": 570,
+        "y": 1140,
+        "wires": [
+            [
+                "9cfe567fa64fd913",
+                "0d9c9b8501605877",
+                "d21384a6a2b4025f"
+            ]
+        ]
+    },
+    {
+        "id": "8fb7243329859fbb",
+        "type": "function",
+        "z": "814da731331121d6",
+        "name": "function 10",
+        "func": "msg.payload = 50;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 220,
+        "wires": [
+            [
+                "4a1051be8e96a08c"
+            ]
+        ]
+    },
+    {
+        "id": "0d9c9b8501605877",
+        "type": "ui_text",
+        "z": "814da731331121d6",
+        "group": "a22d3f00c83d79e3",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Desviación estándar s",
+        "format": "{{msg.payload.rows[0].desviacion_muestral}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 800,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "9cfe567fa64fd913",
+        "type": "function",
+        "z": "814da731331121d6",
+        "name": "function 11",
+        "func": "msg.payload = Math.round( (msg.payload.rows[0].desviacion_muestral/msg.payload.rows[0].cantidad_N)* 100 ) / 100;\n\nflow.set(\"incertidumbre_estandar_sensor\", msg.payload);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 1140,
+        "wires": [
+            [
+                "580fb318e46c8b1e"
+            ]
+        ]
+    },
+    {
+        "id": "580fb318e46c8b1e",
+        "type": "ui_text",
+        "z": "814da731331121d6",
+        "group": "a22d3f00c83d79e3",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Incertidumbre estándar de X̄",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1040,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "736a924a7518613b",
+        "type": "subflow:599c1d1ebfc1a92c",
+        "z": "814da731331121d6",
+        "name": "",
+        "x": 550,
+        "y": 1340,
+        "wires": [
+            [
+                "ea967b64352c4df3"
+            ]
+        ]
+    },
+    {
+        "id": "ea967b64352c4df3",
+        "type": "ui_text",
+        "z": "814da731331121d6",
+        "group": "a22d3f00c83d79e3",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Error absoluto medio",
+        "format": "{{msg.payload.rows[0].error_absoluto_medio}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 780,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "aa8dd5ae1a9eee82",
+        "type": "function",
+        "z": "814da731331121d6",
+        "name": "function 15",
+        "func": "flow.set(\"promedio_sensor\", msg.payload.rows[0].promedio);\n// Recuperamos ambos si están disponibles\nlet val1 = msg.payload.rows[0].promedio;\nlet val2 = flow.get(\"incertidumbre_estandar_sensor\");\n\nif (val1 !== undefined && val2 !== undefined) {\n\n    msg.payload = Math.round( (val2/val1) * 10000 ) / 10000;\n\n    return msg;\n}\n// Si aún no han llegado ambos, no retornamos nada\nreturn null;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 1040,
+        "wires": [
+            [
+                "e98b4ed5939f6487"
+            ]
+        ]
+    },
+    {
+        "id": "e98b4ed5939f6487",
+        "type": "ui_text",
+        "z": "814da731331121d6",
+        "group": "a22d3f00c83d79e3",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Incertidumbre relativa de X̄",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1020,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "446978e3d47a0971",
+        "type": "ui_text",
+        "z": "814da731331121d6",
+        "group": "a22d3f00c83d79e3",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "X̄ + s",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 930,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "d21384a6a2b4025f",
+        "type": "function",
+        "z": "814da731331121d6",
+        "name": "function 14",
+        "func": "let val1 = flow.get(\"promedio_sensor\");\nlet val2 = msg.payload.rows[0].desviacion_muestral;\n\nif (val1 !== undefined && val2 !== undefined) {\n\n    msg.payload = Math.round( (val1 + val2)*100 ) / 100 ;\n\n    return msg;\n}\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 1260,
+        "wires": [
+            [
+                "446978e3d47a0971"
+            ]
+        ]
+    },
+    {
+        "id": "7d7e9adc120a5dec",
+        "type": "function",
+        "z": "814da731331121d6",
+        "name": "function 13",
+        "func": "let datos = msg.payload.rows.map(r => parseFloat(r.valor_medido));\nlet n = datos.length;\nif (n === 0) return null;\n\n// Calcular media\nlet media = datos.reduce((a, b) => a + b, 0) / n;\n\n// Calcular desviación estándar (muestral)\nlet desviacion = Math.sqrt(datos.map(x => (x - media) ** 2).reduce((a, b) => a + b, 0) / (n - 1));\n\n// Crear puntos para la gráfica de Gauss\nlet minX = Math.min(...datos) - 1;\nlet maxX = Math.max(...datos) + 1;\nlet puntos = [];\nfor (let x = minX; x <= maxX; x += 0.1) {\n    let y = (1 / (desviacion * Math.sqrt(2 * Math.PI))) * Math.exp(-((x - media) ** 2) / (2 * desviacion ** 2));\n    puntos.push({ x: Math.round(x * 100) / 100, y: Math.round(y * 10000) / 10000 });\n}\n\n// Buscar pico (máximo y)\nlet pico = puntos.reduce((a, b) => (a.y > b.y ? a : b));\n\n// Detectar outliers ±2σ y ±3σ\nlet outliers2sigma = datos.filter(x => x < media - 2 * desviacion || x > media + 2 * desviacion);\nlet outliers3sigma = datos.filter(x => x < media - 3 * desviacion || x > media + 3 * desviacion);\n\nmsg.payload = [\n    {\n        series: [\"Gauss\"],\n        data: [puntos.map(p => p.y)],\n        labels: puntos.map(p => p.x)\n    }\n];\n\nmsg.payload2 = {\n    picoX: pico.x,\n    picoY: pico.y,\n    outliers_2s: outliers2sigma.length > 0 ? outliers2sigma.map(v => Math.round(v * 100) / 100) : \"Ninguno\",\n    outliers_3s: outliers3sigma.length > 0 ? outliers3sigma.map(v => Math.round(v * 100) / 100) : \"Ninguno\"\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1490,
+        "y": 740,
+        "wires": [
+            [
+                "f71af2b9f6a26662",
+                "880520dbaa676e55",
+                "243f9423fa3c91f3",
+                "6dd5f594f61383fd",
+                "dc8f681ba1cfecfe"
+            ]
+        ]
+    },
+    {
+        "id": "f71af2b9f6a26662",
+        "type": "ui_chart",
+        "z": "814da731331121d6",
+        "name": "",
+        "group": "17ccd7350f4228cf",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Distribución de Mediciones",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1740,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "880520dbaa676e55",
+        "type": "ui_text",
+        "z": "814da731331121d6",
+        "group": "17ccd7350f4228cf",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "X en el pico",
+        "format": "{{msg.payload2.picoX}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1690,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "243f9423fa3c91f3",
+        "type": "ui_text",
+        "z": "814da731331121d6",
+        "group": "17ccd7350f4228cf",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Y en el pico",
+        "format": "{{msg.payload2.picoY}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1690,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "5b404331c31f67f9",
+        "type": "function",
+        "z": "814da731331121d6",
+        "name": "function 16",
+        "func": "let datos = msg.payload.rows;\n\n// Ordenar por tiempo (por si acaso)\ndatos.sort((a, b) => a.orden - b.orden);\n\n// Construir arrays para el gráfico\nlet valores = datos.map(r => r.valor_medido);\nlet etiquetas = datos.map(r => r.tiempo); // eje X ahora es tiempo\n\nmsg.payload = [\n    {\n        series: [\"Mediciones\"],\n        data: [valores],\n        labels: etiquetas\n    }\n];\n\nlet n = datos.length;\nlet mediana;\nif (n % 2 === 0) {\n    mediana = datos[Math.floor(Math.round(n / 2))];\n} else {\n    mediana = datos[Math.floor(n / 2)];\n}\n\nmediana = mediana.valor_medido;\n\n// Calcular moda\nlet modas = flow.get('moda');\n\nmsg.payload2 = {\n    mediana: mediana,\n    moda: modas,\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1510,
+        "y": 1020,
+        "wires": [
+            [
+                "30a8518318c145af",
+                "f01696d62658718e",
+                "3125b2cf53c5aaa7"
+            ]
+        ]
+    },
+    {
+        "id": "30a8518318c145af",
+        "type": "ui_chart",
+        "z": "814da731331121d6",
+        "name": "",
+        "group": "35dd871a84afb4f6",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Gráfico de Tiempo",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1710,
+        "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8c8eae125bd66d9c",
+        "type": "function",
+        "z": "814da731331121d6",
+        "name": "function 17",
+        "func": "let datos = msg.payload.rows.map(r => parseFloat(r.valor_medido));\nif (datos.length === 0) return null;\n\n// Calcular el mínimo y máximo\nlet min = Math.min(...datos);\nlet max = Math.max(...datos);\n\n// Definir número de clases (intervalos) usando la regla de Sturges\nlet numClases = Math.ceil(Math.log2(datos.length) + 1);\n\n// Calcular ancho del intervalo\nlet rango = max - min;\nlet ancho = rango / numClases;\n\n// Inicializar contadores\nlet frecuencias = new Array(numClases).fill(0);\nlet etiquetas = [];\n\n// Rellenar frecuencias\nfor (let valor of datos) {\n    let index = Math.floor((valor - min) / ancho);\n    if (index >= numClases) index = numClases - 1;\n    frecuencias[index]++;\n}\n\n// Crear etiquetas de los intervalos\nfor (let i = 0; i < numClases; i++) {\n    let inicio = (min + i * ancho).toFixed(2);\n    let fin = (min + (i + 1) * ancho).toFixed(2);\n    etiquetas.push(`${inicio} - ${fin}`);\n}\n\n// Encontrar índice con mayor frecuencia\nlet maxFreq = Math.max(...frecuencias);\nlet indiceMax = frecuencias.indexOf(maxFreq);\n\n// Guardar el rango con mayor frecuencia en variable \"hola\"\nflow.set('moda',etiquetas[indiceMax]);\n\n\n// Enviar a gráfico tipo barra\nmsg.payload = [\n    {\n        series: [\"Frecuencia\"],\n        data: [frecuencias],\n        labels: etiquetas\n    }\n];\n\nmsg.payload2 = {\n    minimo: min.toFixed(2),\n    maximo: max.toFixed(2)\n};\n\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1790,
+        "y": 1220,
+        "wires": [
+            [
+                "83aeb1e9229156c0",
+                "e34e3a91a2745d63",
+                "22277743ded61a46"
+            ]
+        ]
+    },
+    {
+        "id": "83aeb1e9229156c0",
+        "type": "ui_chart",
+        "z": "814da731331121d6",
+        "name": "",
+        "group": "115113b1c4689ed3",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Gráfico de Frencuencia",
+        "chartType": "bar",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 2030,
+        "y": 1220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e34e3a91a2745d63",
+        "type": "ui_text",
+        "z": "814da731331121d6",
+        "group": "115113b1c4689ed3",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Valor mínimo",
+        "format": "{{msg.payload2.minimo}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1990,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "22277743ded61a46",
+        "type": "ui_text",
+        "z": "814da731331121d6",
+        "group": "115113b1c4689ed3",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Valor máximo",
+        "format": "{{msg.payload2.maximo}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 2000,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "f01696d62658718e",
+        "type": "ui_text",
+        "z": "814da731331121d6",
+        "group": "439596f5454791b9",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Mediana",
+        "format": "{{msg.payload2.mediana}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1680,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "3125b2cf53c5aaa7",
+        "type": "ui_text",
+        "z": "814da731331121d6",
+        "group": "439596f5454791b9",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Moda",
+        "format": "{{msg.payload2.moda}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1670,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "6dd5f594f61383fd",
+        "type": "ui_text",
+        "z": "814da731331121d6",
+        "group": "439596f5454791b9",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "outlier ±2s",
+        "format": "{{msg.payload2.outliers_2s}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1690,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "dc8f681ba1cfecfe",
+        "type": "ui_text",
+        "z": "814da731331121d6",
+        "group": "439596f5454791b9",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "outlier ±3s",
+        "format": "{{msg.payload2.outliers_3s}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1690,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "ee8f59b8c2022d04",
+        "type": "inject",
+        "z": "814da731331121d6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 170,
+        "y": 760,
+        "wires": [
+            [
+                "9b4b9a8068f8be26"
+            ]
+        ]
+    },
+    {
+        "id": "9b4b9a8068f8be26",
+        "type": "function",
+        "z": "814da731331121d6",
+        "name": "function 18",
+        "func": "function getRandomDecimal(min, max) {\n  return Math.random() * (max - min) + min;\n}\n\nvar temp = getRandomDecimal(30, 100);    // Temperatura\nvar humedad = getRandomDecimal(70, 72); // Humedad\nvar presion = getRandomDecimal(10, 12); // Presión (por ejemplo)\n\nvar resultado = [ parseFloat(temp.toFixed(2)), parseFloat(humedad.toFixed(2)), parseFloat(presion.toFixed(2))];\n\nmsg.payload = resultado;\n//console.log(resultado);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 760,
+        "wires": [
+            [
+                "080a36ce48a1891b"
+            ]
+        ]
+    },
+    {
+        "id": "7009ca5465f1a693",
+        "type": "function",
+        "z": "814da731331121d6",
+        "name": "function 19",
+        "func": "let datos = msg.payload.rows.map(r => ({\n    x: new Date(r.tiempo).getTime(), // tiempo en milisegundos\n    y: parseFloat(r.valor_medido)\n}));\n\nif (datos.length < 2) return null;\n\n// Calcular promedios\nlet n = datos.length;\nlet sumX = datos.reduce((a, d) => a + d.x, 0);\nlet sumY = datos.reduce((a, d) => a + d.y, 0);\nlet meanX = sumX / n;\nlet meanY = sumY / n;\n\n// Calcular pendiente (m) y ordenada al origen (b)\nlet numerator = datos.reduce((sum, d) => sum + (d.x - meanX) * (d.y - meanY), 0);\nlet denominator = datos.reduce((sum, d) => sum + (d.x - meanX) ** 2, 0);\nlet m = numerator / denominator;\nlet b = meanY - m * meanX;\n\n// Generar puntos para la recta\nlet tendencia = datos.map(d => ({\n    x: d.x,\n    y: m * d.x + b\n}));\n\n// Convertir timestamps de vuelta a string (para etiquetas)\nlet labels = datos.map(d => {\n    let date = new Date(d.x);\n    return date.toLocaleString(\"es-PA\", { hour12: false });\n});\n\nmsg.payload = [\n    {\n        series: [\"Medición\", \"Tendencia\"],\n        data: [\n            datos.map(d => d.y),      // valores reales\n            tendencia.map(d => Math.round(d.y*100)/100)   // línea de tendencia\n        ],\n        labels: labels\n    }\n];\n\nmsg.payload2 = {\n    pendiente: Math.round(m * 10000000) / 10000000, // pendiente redondeada\n    direccion: m > 0 ? \"Creciente\" : (m < 0 ? \"Decreciente\" : \"Constante\"),\n    ecuacion: `y = ${Math.round(m * 10000000) / 10000000}x + ${Math.round(b * 100) / 100}`\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1790,
+        "y": 1420,
+        "wires": [
+            [
+                "680778bfd0bc1224",
+                "fe4e2ebcda359192",
+                "76ebe1e1c364dd83",
+                "719ddd12f3e36b8e"
+            ]
+        ]
+    },
+    {
+        "id": "680778bfd0bc1224",
+        "type": "ui_chart",
+        "z": "814da731331121d6",
+        "name": "",
+        "group": "99a0581103f70d88",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Gráfico de Tendencia Lineal",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#ff00ea",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 2040,
+        "y": 1420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fe4e2ebcda359192",
+        "type": "ui_text",
+        "z": "814da731331121d6",
+        "group": "99a0581103f70d88",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Pendiente",
+        "format": "{{msg.payload2.pendiente}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1990,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "76ebe1e1c364dd83",
+        "type": "ui_text",
+        "z": "814da731331121d6",
+        "group": "99a0581103f70d88",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Direccion",
+        "format": "{{msg.payload2.direccion}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1980,
+        "y": 1500,
+        "wires": []
+    },
+    {
+        "id": "719ddd12f3e36b8e",
+        "type": "ui_text",
+        "z": "814da731331121d6",
+        "group": "99a0581103f70d88",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Ecuacion",
+        "format": "{{msg.payload2.ecuacion}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1980,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "a9b132926af4971b",
+        "type": "ui_text",
+        "z": "814da731331121d6",
+        "group": "439596f5454791b9",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "MAD",
+        "format": "{{msg.payload.mad}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 2270,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "33d0b6a33fd1def6",
+        "type": "function",
+        "z": "814da731331121d6",
+        "name": "function 20",
+        "func": "let datos = msg.payload.rows.map(r => parseFloat(r.valor_medido));\nif (datos.length === 0) return null;\n\n// Calcular mediana\ndatos.sort((a, b) => a - b);\nlet n = datos.length;\nlet mediana = n % 2 === 0 ?\n    (datos[n / 2 - 1] + datos[n / 2]) / 2 :\n    datos[Math.floor(n / 2)];\n\n// Calcular desviaciones absolutas a la mediana\nlet desviacionesAbsolutas = datos.map(v => Math.abs(v - mediana));\n\n// Calcular MAD (mediana de las desviaciones absolutas)\ndesviacionesAbsolutas.sort((a, b) => a - b);\nlet mad = n % 2 === 0 ?\n    (desviacionesAbsolutas[n / 2 - 1] + desviacionesAbsolutas[n / 2]) / 2 :\n    desviacionesAbsolutas[Math.floor(n / 2)];\n\nmsg.payload = {\n    mediana: Math.round(mediana * 100) / 100,\n    mad: Math.round(mad * 100) / 100\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2110,
+        "y": 1000,
+        "wires": [
+            [
+                "a9b132926af4971b"
+            ]
+        ]
+    },
+    {
+        "id": "2ef34a1aeaf929fc",
+        "type": "function",
+        "z": "814da731331121d6",
+        "name": "function 21",
+        "func": "let sensor_elegido = flow.get(\"sensor_actual\");\n\nmsg.topic = 'SELECT * FROM mediciones_sensor_'+sensor_elegido+';';\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 680,
+        "wires": [
+            [
+                "1f5130af925bbf00"
+            ]
+        ]
+    },
+    {
+        "id": "ddf9d050ec975f5e",
+        "type": "function",
+        "z": "814da731331121d6",
+        "name": "function 22",
+        "func": "let datos = msg.payload.rows.map(r => parseFloat(r.valor_medido));\nif (datos.length < 2) return null;\n\ndatos.sort((a, b) => a - b);\n\nfunction percentile(p) {\n    let i = (datos.length - 1) * p;\n    let lo = Math.floor(i), hi = Math.ceil(i);\n    let w = i - lo;\n    return datos[lo] * (1 - w) + datos[hi] * w;\n}\n\nlet q1 = percentile(0.25);\nlet mediana = percentile(0.5);\nlet q3 = percentile(0.75);\nlet iqr = q3 - q1;\nlet lowerFence = q1 - 1.5 * iqr;\nlet upperFence = q3 + 1.5 * iqr;\n\nlet min = datos.find(v => v >= lowerFence);\nlet max = [...datos].reverse().find(v => v <= upperFence);\nlet outliers = datos.filter(v => v < lowerFence || v > upperFence);\n\n// Ajustes de SVG\nlet padding = 40;\nlet svgWidth = 200 + padding * 2;  // Ajustamos el ancho para incluir padding visual\nlet scale = v => padding + ((v - min) / (max - min)) * (svgWidth - padding * 2);\n\nfunction redondear(v) {\n    return Math.round(v * 100) / 100;\n}\n\nmsg.payload = {\n    width: svgWidth,\n    height: 115,\n    minX: scale(min),\n    q1X: scale(q1),\n    medianaX: scale(mediana),\n    q3X: scale(q3),\n    maxX: scale(max),\n    boxWidth: scale(q3) - scale(q1),\n    outliersX: outliers.map(v => scale(v)),\n\n    // Valores redondeados para mostrar\n    min: redondear(min),\n    q1: redondear(q1),\n    mediana: redondear(mediana),\n    q3: redondear(q3),\n    max: redondear(max)\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2100,
+        "y": 660,
+        "wires": [
+            [
+                "42142f52f1f0369a"
+            ]
+        ]
+    },
+    {
+        "id": "290ffa8aab4774b1",
+        "type": "ui_template",
+        "z": "814da731331121d6",
+        "group": "81420f405cbc7087",
+        "name": "",
+        "order": 1,
+        "width": "6",
+        "height": "3",
+        "format": "<h3 style=\"text-align: center;\">Gráfico de Caja</h3>\n\n<div style=\"overflow-x: auto;\">\n    <svg style=\"display: block; margin: 0 auto;\" width=\"{{msg.payload.width}}\" height=\"{{msg.payload.height}}\"\n        xmlns=\"http://www.w3.org/2000/svg\">\n        <!-- Bigotes -->\n        <line x1=\"{{msg.payload.minX}}\" y1=\"50\" x2=\"{{msg.payload.q1X}}\" y2=\"50\" stroke=\"black\" stroke-width=\"2\" />\n        <line x1=\"{{msg.payload.q3X}}\" y1=\"50\" x2=\"{{msg.payload.maxX}}\" y2=\"50\" stroke=\"black\" stroke-width=\"2\" />\n\n        <!-- Caja -->\n        <rect x=\"{{msg.payload.q1X}}\" y=\"30\" width=\"{{msg.payload.boxWidth}}\" height=\"40\" fill=\"#9cf\" stroke=\"black\" />\n\n        <!-- Mediana -->\n        <line x1=\"{{msg.payload.medianaX}}\" y1=\"30\" x2=\"{{msg.payload.medianaX}}\" y2=\"70\" stroke=\"red\"\n            stroke-width=\"2\" />\n\n        <!-- Líneas verticales en extremos -->\n        <line x1=\"{{msg.payload.minX}}\" y1=\"40\" x2=\"{{msg.payload.minX}}\" y2=\"60\" stroke=\"black\" stroke-width=\"2\" />\n        <line x1=\"{{msg.payload.maxX}}\" y1=\"40\" x2=\"{{msg.payload.maxX}}\" y2=\"60\" stroke=\"black\" stroke-width=\"2\" />\n\n        <!-- Outliers -->\n        <circle ng-repeat=\"x in msg.payload.outliersX\" cx=\"{{x}}\" cy=\"50\" r=\"4\" fill=\"orange\" />\n\n        <!-- Regla base -->\n        <line x1=\"{{msg.payload.minX}}\" y1=\"85\" x2=\"{{msg.payload.maxX}}\" y2=\"85\" stroke=\"black\" stroke-width=\"1\" />\n\n        <!-- Marcas y etiquetas -->\n        <line x1=\"{{msg.payload.minX}}\" y1=\"80\" x2=\"{{msg.payload.minX}}\" y2=\"90\" stroke=\"black\" />\n        <text x=\"{{msg.payload.minX}}\" y=\"102\" font-size=\"10\" text-anchor=\"middle\">{{msg.payload.min}}</text>\n\n        <line x1=\"{{msg.payload.q1X}}\" y1=\"80\" x2=\"{{msg.payload.q1X}}\" y2=\"90\" stroke=\"black\" />\n        <text x=\"{{msg.payload.q1X}}\" y=\"102\" font-size=\"10\" text-anchor=\"middle\">{{msg.payload.q1}}</text>\n\n        <line x1=\"{{msg.payload.medianaX}}\" y1=\"80\" x2=\"{{msg.payload.medianaX}}\" y2=\"90\" stroke=\"red\" />\n        <text x=\"{{msg.payload.medianaX}}\" y=\"102\" font-size=\"10\" text-anchor=\"middle\">{{msg.payload.mediana}}</text>\n\n        <line x1=\"{{msg.payload.q3X}}\" y1=\"80\" x2=\"{{msg.payload.q3X}}\" y2=\"90\" stroke=\"black\" />\n        <text x=\"{{msg.payload.q3X}}\" y=\"102\" font-size=\"10\" text-anchor=\"middle\">{{msg.payload.q3}}</text>\n\n        <line x1=\"{{msg.payload.maxX}}\" y1=\"80\" x2=\"{{msg.payload.maxX}}\" y2=\"90\" stroke=\"black\" />\n        <text x=\"{{msg.payload.maxX}}\" y=\"102\" font-size=\"10\" text-anchor=\"middle\">{{msg.payload.max}}</text>\n    </svg>\n</div>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 2200,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "afbfdca97025b05d",
+        "type": "ui_text",
+        "z": "814da731331121d6",
+        "group": "81420f405cbc7087",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Q1",
+        "format": "{{msg.payload.q1}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 2190,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "c97785da05b60f7a",
+        "type": "ui_text",
+        "z": "814da731331121d6",
+        "group": "81420f405cbc7087",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Q2",
+        "format": "{{msg.payload.mediana}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 2190,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "f3aa00759179aaef",
+        "type": "ui_text",
+        "z": "814da731331121d6",
+        "group": "81420f405cbc7087",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Q3",
+        "format": "{{msg.payload.q3}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 2190,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "3d8a6437a4e1fad9",
+        "type": "ui_text",
+        "z": "814da731331121d6",
+        "group": "81420f405cbc7087",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Min",
+        "format": "{{msg.payload.min}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 2190,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "ca0b2065deb652df",
+        "type": "ui_text",
+        "z": "814da731331121d6",
+        "group": "81420f405cbc7087",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Max",
+        "format": "{{msg.payload.max}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 2190,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "de952c43d0993616",
+        "type": "ui_dropdown",
+        "z": "814da731331121d6",
+        "name": "",
+        "label": "Sensor",
+        "tooltip": "",
+        "place": "",
+        "group": "c8ca4dfe67ec9c02",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "1",
+                "value": "a",
+                "type": "str"
+            },
+            {
+                "label": "2",
+                "value": "b",
+                "type": "str"
+            },
+            {
+                "label": "3",
+                "value": "c",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 600,
+        "y": 280,
+        "wires": [
+            [
+                "83bea7d43fec8fbf"
+            ]
+        ]
+    },
+    {
+        "id": "d7590115e8ff443f",
+        "type": "function",
+        "z": "814da731331121d6",
+        "name": "function 23",
+        "func": "msg.payload = 'a';\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 280,
+        "wires": [
+            [
+                "de952c43d0993616"
+            ]
+        ]
+    },
+    {
+        "id": "9e55c0b5e8f52370",
+        "type": "function",
+        "z": "814da731331121d6",
+        "name": "function 24",
+        "func": "let sensor_elegido = flow.get(\"sensor_actual\");\n\n\nmsg.topic = `\n\nDELETE FROM mediciones_sensor_`+sensor_elegido+` WHERE (SELECT MAX(orden) FROM mediciones_sensor_`+sensor_elegido+`) >= 0;\n\n\n\n`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1590,
+        "y": 220,
+        "wires": [
+            [
+                "c8dd976d3cb694a7"
+            ]
+        ]
+    },
+    {
+        "id": "c8dd976d3cb694a7",
+        "type": "subflow:599c1d1ebfc1a92c",
+        "z": "814da731331121d6",
+        "name": "",
+        "x": 1750,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f4778b13938a3756",
+        "type": "ui_button",
+        "z": "814da731331121d6",
+        "name": "",
+        "group": "863d6af77889d50c",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Reiniciar registro",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1390,
+        "y": 220,
+        "wires": [
+            [
+                "9e55c0b5e8f52370"
+            ]
+        ]
+    },
+    {
+        "id": "83bea7d43fec8fbf",
+        "type": "function",
+        "z": "814da731331121d6",
+        "name": "function 4",
+        "func": "flow.set(\"sensor_actual\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ea945f1ab32771b0",
+        "type": "function",
+        "z": "814da731331121d6",
+        "name": "function 12",
+        "func": "let sensor_elegido = flow.get(\"sensor_actual\");\nmsg.topic = `SELECT ROUND(AVG(valor_medido), 2) AS promedio FROM mediciones_sensor_`+sensor_elegido+`;\n`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 980,
+        "wires": [
+            [
+                "5fe57641e099f19c"
+            ]
+        ]
+    },
+    {
+        "id": "9892bd82da304475",
+        "type": "function",
+        "z": "814da731331121d6",
+        "name": "function 25",
+        "func": "let sensor_elegido = flow.get(\"sensor_actual\");\nmsg.topic = `\n\nSELECT COUNT(*) AS cantidad_N, CASE WHEN COUNT(*) <= 1 THEN 0 ELSE ROUND( SQRT( SUM( (valor_medido - (SELECT AVG(valor_medido) FROM mediciones_sensor_`+sensor_elegido+`)) * (valor_medido - (SELECT AVG(valor_medido) FROM mediciones_sensor_`+sensor_elegido+`)) ) / (COUNT(*) - 1) ), 2 ) END AS desviacion_muestral FROM mediciones_sensor_`+sensor_elegido+`;\n\n\n`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 1140,
+        "wires": [
+            [
+                "e0aa35e0b38619c6"
+            ]
+        ]
+    },
+    {
+        "id": "d65fbd36f59fc36d",
+        "type": "function",
+        "z": "814da731331121d6",
+        "name": "function 26",
+        "func": "let sensor_elegido = flow.get(\"sensor_actual\");\n\nmsg.topic = `\n\nSELECT ROUND( AVG(ABS(valor_medido - (SELECT AVG(valor_medido) FROM mediciones_sensor_`+sensor_elegido+`))), 2 ) AS error_absoluto_medio FROM mediciones_sensor_`+sensor_elegido+`;\n\n\n`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 1340,
+        "wires": [
+            [
+                "736a924a7518613b"
+            ]
+        ]
+    },
+    {
+        "id": "d50c04b7ae1f253b",
+        "type": "link out",
+        "z": "814da731331121d6",
+        "name": "link out 1",
+        "mode": "link",
+        "links": [
+            "a0445d843b35a5fd",
+            "c423e249beec09f1",
+            "b5c068ce49b09615",
+            "941714c7bc99cdfe",
+            "83fe20d96e4f93a9",
+            "cc4a8598f3b34269"
+        ],
+        "x": 615,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "a0445d843b35a5fd",
+        "type": "link in",
+        "z": "814da731331121d6",
+        "name": "link in 1",
+        "links": [
+            "d50c04b7ae1f253b"
+        ],
+        "x": 295,
+        "y": 680,
+        "wires": [
+            [
+                "45305ea5bb604b19"
+            ]
+        ]
+    },
+    {
+        "id": "c423e249beec09f1",
+        "type": "link in",
+        "z": "814da731331121d6",
+        "name": "link in 2",
+        "links": [
+            "d50c04b7ae1f253b"
+        ],
+        "x": 295,
+        "y": 860,
+        "wires": [
+            [
+                "7e35b5d17ce24476",
+                "a3efa6da8b2bfea2"
+            ]
+        ]
+    },
+    {
+        "id": "b5c068ce49b09615",
+        "type": "link in",
+        "z": "814da731331121d6",
+        "name": "link in 3",
+        "links": [
+            "d50c04b7ae1f253b"
+        ],
+        "x": 295,
+        "y": 980,
+        "wires": [
+            [
+                "ea945f1ab32771b0"
+            ]
+        ]
+    },
+    {
+        "id": "941714c7bc99cdfe",
+        "type": "link in",
+        "z": "814da731331121d6",
+        "name": "link in 4",
+        "links": [
+            "d50c04b7ae1f253b"
+        ],
+        "x": 295,
+        "y": 1140,
+        "wires": [
+            [
+                "9892bd82da304475"
+            ]
+        ]
+    },
+    {
+        "id": "83fe20d96e4f93a9",
+        "type": "link in",
+        "z": "814da731331121d6",
+        "name": "link in 5",
+        "links": [
+            "d50c04b7ae1f253b"
+        ],
+        "x": 285,
+        "y": 1340,
+        "wires": [
+            [
+                "d65fbd36f59fc36d"
+            ]
+        ]
+    },
+    {
+        "id": "42142f52f1f0369a",
+        "type": "link out",
+        "z": "814da731331121d6",
+        "name": "link out 2",
+        "mode": "link",
+        "links": [
+            "6b9342ef642f310a"
+        ],
+        "x": 2235,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "6b9342ef642f310a",
+        "type": "link in",
+        "z": "814da731331121d6",
+        "name": "link in 6",
+        "links": [
+            "42142f52f1f0369a"
+        ],
+        "x": 2045,
+        "y": 820,
+        "wires": [
+            [
+                "afbfdca97025b05d",
+                "c97785da05b60f7a",
+                "290ffa8aab4774b1",
+                "f3aa00759179aaef",
+                "3d8a6437a4e1fad9",
+                "ca0b2065deb652df"
+            ]
+        ]
+    },
+    {
+        "id": "2147eeaca5a1a115",
+        "type": "link out",
+        "z": "814da731331121d6",
+        "name": "link out 3",
+        "mode": "link",
+        "links": [
+            "7d9182b7ec59a733",
+            "76cb8374c68ca953",
+            "61a4955bf064ae99",
+            "e8d12c385af541e0",
+            "d964c86d6e09eaf4",
+            "e28c9bf351c2a4ac",
+            "9b07971aeb8f4c16"
+        ],
+        "x": 1165,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "7d9182b7ec59a733",
+        "type": "link in",
+        "z": "814da731331121d6",
+        "name": "link in 7",
+        "links": [
+            "2147eeaca5a1a115"
+        ],
+        "x": 1365,
+        "y": 680,
+        "wires": [
+            [
+                "c8924dbb46dcd29a"
+            ]
+        ]
+    },
+    {
+        "id": "76cb8374c68ca953",
+        "type": "link in",
+        "z": "814da731331121d6",
+        "name": "link in 8",
+        "links": [
+            "2147eeaca5a1a115"
+        ],
+        "x": 1365,
+        "y": 740,
+        "wires": [
+            [
+                "7d7e9adc120a5dec"
+            ]
+        ]
+    },
+    {
+        "id": "61a4955bf064ae99",
+        "type": "link in",
+        "z": "814da731331121d6",
+        "name": "link in 9",
+        "links": [
+            "2147eeaca5a1a115"
+        ],
+        "x": 1385,
+        "y": 1020,
+        "wires": [
+            [
+                "5b404331c31f67f9"
+            ]
+        ]
+    },
+    {
+        "id": "9b07971aeb8f4c16",
+        "type": "link in",
+        "z": "814da731331121d6",
+        "name": "link in 10",
+        "links": [
+            "2147eeaca5a1a115"
+        ],
+        "x": 1975,
+        "y": 660,
+        "wires": [
+            [
+                "ddf9d050ec975f5e"
+            ]
+        ]
+    },
+    {
+        "id": "e28c9bf351c2a4ac",
+        "type": "link in",
+        "z": "814da731331121d6",
+        "name": "link in 11",
+        "links": [
+            "2147eeaca5a1a115"
+        ],
+        "x": 1985,
+        "y": 1000,
+        "wires": [
+            [
+                "33d0b6a33fd1def6"
+            ]
+        ]
+    },
+    {
+        "id": "e8d12c385af541e0",
+        "type": "link in",
+        "z": "814da731331121d6",
+        "name": "link in 12",
+        "links": [
+            "2147eeaca5a1a115"
+        ],
+        "x": 1665,
+        "y": 1220,
+        "wires": [
+            [
+                "8c8eae125bd66d9c"
+            ]
+        ]
+    },
+    {
+        "id": "d964c86d6e09eaf4",
+        "type": "link in",
+        "z": "814da731331121d6",
+        "name": "link in 13",
+        "links": [
+            "2147eeaca5a1a115"
+        ],
+        "x": 1665,
+        "y": 1420,
+        "wires": [
+            [
+                "7009ca5465f1a693"
+            ]
+        ]
+    },
+    {
+        "id": "b9ceccd7966d2d1c",
+        "type": "tcp in",
+        "z": "814da731331121d6",
+        "name": "",
+        "server": "client",
+        "host": "127.0.0.1",
+        "port": "5050",
+        "datamode": "stream",
+        "datatype": "utf8",
+        "newline": "\\n",
+        "topic": "",
+        "trim": false,
+        "base64": false,
+        "tls": "",
+        "x": 190,
+        "y": 580,
+        "wires": [
+            [
+                "867fc22eab7cc031"
+            ]
+        ]
+    },
+    {
+        "id": "867fc22eab7cc031",
+        "type": "function",
+        "z": "814da731331121d6",
+        "name": "function 27",
+        "func": "if (flow.get(\"switch_0\") == 1){\n// Supongamos que msg.payload es el string que recibes:\nlet input = msg.payload;  // ejemplo: \"12.34,68.49,23.49\"\n\n// Confirmar que es string:\nif (typeof input !== 'string') {\n    input = input.toString('utf8');\n}\n\n// Separar en array\nlet partes = input.split(',');\n\n// Convertir cada parte a float\nlet resultado = partes.map(x => parseFloat(x.trim()));\n\n// Opcional: verificar si hay NaN\nfor(let i=0; i<resultado.length; i++){\n    if (isNaN(resultado[i])) {\n        node.warn(\"No es un número: \" + partes[i]);\n        return null;\n    }\n}\n\n// Enviar resultado como array de floats\nmsg.payload = resultado;\nconsole.log(resultado);\nreturn msg;\n\n\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 580,
+        "wires": [
+            [
+                "d50c04b7ae1f253b",
+                "b386bd3626c2d6bb"
+            ]
+        ]
+    },
+    {
+        "id": "7070de3148006597",
+        "type": "debug",
+        "z": "814da731331121d6",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1220,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "dedbed33bddc90eb",
+        "type": "inject",
+        "z": "814da731331121d6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 130,
+        "y": 440,
+        "wires": [
+            [
+                "8672a6acb37e597a"
+            ]
+        ]
+    },
+    {
+        "id": "a3efa6da8b2bfea2",
+        "type": "function",
+        "z": "814da731331121d6",
+        "name": "function 29",
+        "func": "let sensor_elegido = flow.get(\"sensor_actual\");\nvar sensor\n\nswitch (sensor_elegido){\n    case 'a':\n        sensor = 0;\n        break;\n    case 'b':\n        sensor = 1;\n        break;\n    case 'c':\n        sensor = 2;\n        break;\n    default:\n        sensor = 0;\n        break;\n}\n\nmsg.payload = msg.payload[sensor];\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 920,
+        "wires": [
+            [
+                "08cc8d48a98635eb"
+            ]
+        ]
+    },
+    {
+        "id": "b386bd3626c2d6bb",
+        "type": "debug",
+        "z": "814da731331121d6",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "8672a6acb37e597a",
+        "type": "ui_button",
+        "z": "814da731331121d6",
+        "name": "",
+        "group": "c8ca4dfe67ec9c02",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "label": "Registrar mediciones (►)",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 350,
+        "y": 440,
+        "wires": [
+            [
+                "987d028eb93eeb12"
+            ]
+        ]
+    },
+    {
+        "id": "cbc7435644dc0746",
+        "type": "ui_led",
+        "z": "814da731331121d6",
+        "order": 6,
+        "group": "c8ca4dfe67ec9c02",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "0",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "1",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 910,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "e83f5093bc27e4c8",
+        "type": "http in",
+        "z": "814da731331121d6",
+        "name": "",
+        "url": "/descargar-datos",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 1400,
+        "y": 80,
+        "wires": [
+            [
+                "a125f9d4e3c68099"
+            ]
+        ]
+    },
+    {
+        "id": "80323415cb8246f7",
+        "type": "http response",
+        "z": "814da731331121d6",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 2880,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "d36c1fccf4c992e1",
+        "type": "ui_template",
+        "z": "814da731331121d6",
+        "group": "863d6af77889d50c",
+        "name": "Descargar mediciones (.csv)",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "format": "<md-button class=\"md-raised md-primary\" ng-click=\"downloadDB()\" style=\"color: white;\">Descargar mediciones (.csv)</md-button>\n\n<script>\n    (function(scope) {\n        scope.downloadDB = function() {\n            const link = document.createElement('a');\n            link.href = '/descargar-datos';\n            link.download = 'DatosSensores.zip';\n            document.body.appendChild(link);\n            link.click();\n            document.body.removeChild(link);\n        };\n    })(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1420,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7c7c303f302e8550",
+        "type": "function",
+        "z": "814da731331121d6",
+        "name": "function 31",
+        "func": "msg.payload_c = msg.payload.rows;\n\n// Asegurarse de que msg.payload es un arreglo de objetos\nif (!Array.isArray(msg.payload_a) || msg.payload_a.length === 0 || !Array.isArray(msg.payload_b) || msg.payload_b.length === 0 || !Array.isArray(msg.payload_c) || msg.payload_c.length === 0) {\n    msg.payload = \"Sin datos\";\n    return msg;\n}\n\n// Obtener encabezados desde la primera fila\nlet csv = \"valor_medido,orden,tiempo\"+ \"\\n\";\n\nfunction tablas_csv(input){\n    csv = \"valor_medido,orden,tiempo\"+ \"\\n\";\n    input.forEach(row => {\n    \n    let line = String(row[\"valor_medido\"])+\",\"+String(row[\"orden\"])+\",'\"+String(row[\"tiempo\"])+\"'\";\n    csv += line + \"\\n\";\n    \n    });\n    csv = csv.slice(0, -1);\n    return csv;\n}\n\nmsg.payload = [\n    {filename: \"sensor_a.csv\", payload: tablas_csv(msg.payload_a)},\n    {filename: \"sensor_b.csv\", payload: tablas_csv(msg.payload_b)},\n    { filename: \"sensor_c.csv\", payload: tablas_csv(msg.payload_c)}\n];\n\n\ndelete msg.payload_a;\ndelete msg.payload_b;\ndelete msg.payload_c;\ndelete msg.topic;\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2430,
+        "y": 80,
+        "wires": [
+            [
+                "4febdc669ed8ccd9"
+            ]
+        ]
+    },
+    {
+        "id": "d53a5daa148a5b20",
+        "type": "subflow:599c1d1ebfc1a92c",
+        "z": "814da731331121d6",
+        "name": "",
+        "x": 1730,
+        "y": 80,
+        "wires": [
+            [
+                "8b7cdcb126e4709e"
+            ]
+        ]
+    },
+    {
+        "id": "5a059710e331e8b5",
+        "type": "subflow:599c1d1ebfc1a92c",
+        "z": "814da731331121d6",
+        "name": "",
+        "x": 2010,
+        "y": 80,
+        "wires": [
+            [
+                "881e5b17e629befd"
+            ]
+        ]
+    },
+    {
+        "id": "4013095f527e1d80",
+        "type": "subflow:599c1d1ebfc1a92c",
+        "z": "814da731331121d6",
+        "name": "",
+        "x": 2290,
+        "y": 80,
+        "wires": [
+            [
+                "7c7c303f302e8550"
+            ]
+        ]
+    },
+    {
+        "id": "881e5b17e629befd",
+        "type": "function",
+        "z": "814da731331121d6",
+        "name": "function 32",
+        "func": "msg.payload_b = msg.payload.rows;\n\nmsg.topic = `\n\nSELECT * FROM mediciones_sensor_c;\n\n`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2150,
+        "y": 80,
+        "wires": [
+            [
+                "4013095f527e1d80"
+            ]
+        ]
+    },
+    {
+        "id": "8b7cdcb126e4709e",
+        "type": "function",
+        "z": "814da731331121d6",
+        "name": "function 33",
+        "func": "msg.payload_a = msg.payload.rows;\n\nmsg.topic = `\n\nSELECT * FROM mediciones_sensor_b;\n\n`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1870,
+        "y": 80,
+        "wires": [
+            [
+                "5a059710e331e8b5"
+            ]
+        ]
+    },
+    {
+        "id": "a125f9d4e3c68099",
+        "type": "function",
+        "z": "814da731331121d6",
+        "name": "function 34",
+        "func": "msg.topic = `\n\nSELECT * FROM mediciones_sensor_a;\n\n`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1590,
+        "y": 80,
+        "wires": [
+            [
+                "d53a5daa148a5b20"
+            ]
+        ]
+    },
+    {
+        "id": "4febdc669ed8ccd9",
+        "type": "zip",
+        "z": "814da731331121d6",
+        "name": "",
+        "mode": "compress",
+        "filename": "DatosSensores",
+        "compressionlevel": 6,
+        "outasstring": false,
+        "x": 2580,
+        "y": 80,
+        "wires": [
+            [
+                "011e4b06413d2118"
+            ]
+        ]
+    },
+    {
+        "id": "011e4b06413d2118",
+        "type": "function",
+        "z": "814da731331121d6",
+        "name": "function 30",
+        "func": "msg.filename = \"DatosSensores.zip\"; // opcional\n\nmsg.headers = {\n    \"Content-Type\": \"application/zip\",\n    \"Content-Disposition\": \"attachment; filename=\\\"\" + msg.filename + \"\\\"\"\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2730,
+        "y": 80,
+        "wires": [
+            [
+                "80323415cb8246f7"
+            ]
+        ]
+    },
+    {
+        "id": "d5e857183b364dcd",
+        "type": "comment",
+        "z": "814da731331121d6",
+        "g": "9436d1da91ce27f1",
+        "name": "Random values",
+        "info": "",
+        "x": 520,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "8e600359261c020d",
+        "type": "subflow:599c1d1ebfc1a92c",
+        "z": "9a63bb3a153bd227",
+        "name": "",
+        "env": [
+            {
+                "name": "Fixed_Statement",
+                "value": "CREATE TABLE IF NOT EXISTS mediciones_sensor_a ( valor_medido REAL, orden INTEGER, tiempo TEXT)",
+                "type": "str"
+            }
+        ],
+        "x": 326,
+        "y": 99,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8cbea7a91d39fb4f",
+        "type": "inject",
+        "z": "9a63bb3a153bd227",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1.5",
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 136,
+        "y": 99,
+        "wires": [
+            [
+                "8e600359261c020d",
+                "ce8501d6004a6195",
+                "5c9442d97af3cb01"
+            ]
+        ]
+    },
+    {
+        "id": "ce8501d6004a6195",
+        "type": "subflow:599c1d1ebfc1a92c",
+        "z": "9a63bb3a153bd227",
+        "name": "",
+        "env": [
+            {
+                "name": "Fixed_Statement",
+                "value": "CREATE TABLE IF NOT EXISTS mediciones_sensor_b ( valor_medido REAL, orden INTEGER, tiempo TEXT );",
+                "type": "str"
+            }
+        ],
+        "x": 330,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5c9442d97af3cb01",
+        "type": "subflow:599c1d1ebfc1a92c",
+        "z": "9a63bb3a153bd227",
+        "name": "",
+        "env": [
+            {
+                "name": "Fixed_Statement",
+                "value": "CREATE TABLE IF NOT EXISTS mediciones_sensor_c ( valor_medido REAL, orden INTEGER, tiempo TEXT );",
+                "type": "str"
+            }
+        ],
+        "x": 330,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    }
+]
