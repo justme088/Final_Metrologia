@@ -1,4 +1,5 @@
 # Proyecto Final de Metrología
+## Modelo de Adquisición, Visualización y Análisis de Datos de Sensores
 
 Este proyecto es un **modelo funcional e interactivo** que representa cómo se integran sensores reales, adquisición de datos, análisis y visualización dentro de un entorno técnico con orientación industrial.
 
