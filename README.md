@@ -5,6 +5,9 @@ Este proyecto es un **modelo funcional e interactivo** que representa cómo se i
 
 No busca ser una solución industrial completa, sino una **maqueta demostrativa** que expone el rol fundamental de la **metrología** dentro de procesos automatizados. Se busca ilustrar cómo se gestionan los datos provenientes de sensores físicos y cómo estos datos permiten tomar decisiones informadas en un contexto de ingeniería.
 
+## 🎯 Objetivo General
+Desarrollar un sistema portátil de monitoreo y visualización en tiempo real de variables físicas captadas por sensores, utilizando un Arduino Mega conectado mediante puente Serial-TCP a un servidor Node-RED alojado en un dispositivo móvil, con el fin de simular una interfaz Hombre-Máquina (HMI) funcional que permita analizar, almacenar y exportar los datos, integrando principios metrológicos aplicables al entorno industrial para demostrar la importancia de la trazabilidad y la calibración en la Ingeniería Mecatrónica.
+
 ## 🛠️ Descripción técnica
 
 ### 📡 Adquisición de datos reales
@@ -20,7 +23,7 @@ No busca ser una solución industrial completa, sino una **maqueta demostrativa*
 - Estos datos son enviados por **puerto serial** (usando un cable USB A de entrada - USB C de salida) del dispositivo móvil a través de un **puente Serial–TCP**, usando la aplicación [Communication Bridge Pro](https://play.google.com/store/apps/details?id=masar.bluetoothbridge.pro&hl=en_US) de Android, que une el puerto serial a un servidor TCP (puerto 5050) creada por la misma aplicación.
 - El **servidor**, alojado en un **dispositivo móvil Android con [Node-RED](https://nodered.org/about/) en [Termux](https://play.google.com/store/apps/details?id=com.termux&hl=en_US)**, recibe los datos mediante una **conexión TCP directa** como cliente en el puerto 5050.
 
-#### Especificaciones
+#### Específicaciones
 **Termux**:
 - python3 instalado y con librería de setuptools
 - Añadir el repositorio tur -> pkg install -y tur-repo -> pkg install -y nodejs-18 | Este será instalado en /data/data/com.termux/files/usr/opt/nodejs-18, añade "/data/data/com.termux/files/usr/opt/nodejs-18/bin" a $PATH.
