@@ -13,11 +13,11 @@ Desarrollar un sistema portátil de monitoreo y visualización en tiempo real de
 ### 📡 Adquisición de datos reales
 
 - Un **Arduino Mega** está conectado a **tres sensores físicos**.
-#### GY-906 (temperatura)
+#### [GY-906 (temperatura)](https://naylampmechatronics.com/sensores-temperatura-y-humedad/330-sensor-de-temperatura-infrarrojo-mlx90614-gy-906.html)
 ![gy-906](https://github.com/user-attachments/assets/d78cdfa1-f6b3-49aa-a4ba-8a93025aa33f)
-#### HC-S04 (distancia)
+#### [HC-S04 (distancia)](https://naylampmechatronics.com/sensores-proximidad/10-sensor-ultrasonido-hc-sr04.html)
 ![hc-sr04](https://github.com/user-attachments/assets/75ad946d-f61c-4a7f-a283-80e545f00ce3)
-#### Sparkfun SHTC3 (humedad)
+#### [Sparkfun SHTC3 (humedad)](https://www.sparkfun.com/sparkfun-humidity-sensor-breakout-shtc3-qwiic.html)
 ![SHTC3](https://github.com/user-attachments/assets/9d52ccef-720e-41f9-8f4c-e4c2e126189d)
 
 - Estos datos son enviados por **puerto serial** (usando un cable USB A de entrada - USB C de salida) del dispositivo móvil a través de un **puente Serial–TCP**, usando la aplicación [Communication Bridge Pro](https://play.google.com/store/apps/details?id=masar.bluetoothbridge.pro&hl=en_US) de Android, que une el puerto serial a un servidor TCP (puerto 5050) creada por la misma aplicación.
