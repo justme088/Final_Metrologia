@@ -17,7 +17,7 @@ No busca ser una solución industrial completa, sino una **maqueta demostrativa*
 #### Sparkfun SHTC3 (humedad)
 ![SHTC3](https://github.com/user-attachments/assets/9d52ccef-720e-41f9-8f4c-e4c2e126189d)
 
-- Estos datos son enviados por **puerto serial** (usando un cable USB A de entrada - USB C de salida) del dispositivo móvil a través de un **puente Serial–TCP**, usando la aplicación [Communication Bridge Pro](https://play.google.com/store/apps/details?id=masar.bluetoothbridge.pro&hl=en_US) de Android, que une el puerto serial a un servidor TCP creada por la misma aplicación.
+- Estos datos son enviados por **puerto serial** (usando un cable USB A de entrada - USB C de salida) del dispositivo móvil a través de un **puente Serial–TCP**, usando la aplicación [Communication Bridge Pro](https://play.google.com/store/apps/details?id=masar.bluetoothbridge.pro&hl=en_US) de Android, que une el puerto serial a un servidor TCP (puerto 5050) creada por la misma aplicación.
 - El **servidor**, alojado en un **dispositivo móvil Android con [Node-RED](https://nodered.org/about/) en [Termux](https://play.google.com/store/apps/details?id=com.termux&hl=en_US)**, recibe los datos mediante una **conexión TCP directa** como cliente en el puerto 5050.
 
 #### Especificaciones
