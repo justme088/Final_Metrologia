@@ -59,7 +59,7 @@ Breves descripciones de cada indicador clave usado en el análisis de datos, par
   - Se muestra abajo de la gráfica el valor mínimo y valor máximo
 - Mediana
 - Moda (pero de rango)
-- MAD
+- MAD (mean absolute deviation o en español, desviación media absoluta)
 - Outlier ±2σ, ±3σ
 - Gráfica de Tendencia lineal:
   - línea de tendencia principal
