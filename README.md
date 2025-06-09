@@ -66,13 +66,15 @@ Desarrollar un sistema portátil de monitoreo y visualización en tiempo real de
 
 ### 🗺️ Capturas de los flujos en Node-RED
 #### Flow 0
-![Flow0](https://github.com/user-attachments/assets/cee61567-c689-4439-a505-7d2c9884013c)
+![Flow0](https://github.com/user-attachments/assets/113f44ff-1ddf-4793-97e8-f47483dd88d2)
+
 
 #### Flow 1
-![Flow1](https://github.com/user-attachments/assets/79ce6c02-9e35-4703-82ec-841880a0daad)
+![Flow1](https://github.com/user-attachments/assets/862335c3-62ba-4ee1-b7d6-699ddf3e97db)
+
 
 #### Flow 2
-![Flow2](https://github.com/user-attachments/assets/c01105ab-2618-461e-a0bf-84b8d9eb4abd)
+![Flow2](https://github.com/user-attachments/assets/8172c947-efe9-44f6-9d64-e7c10f101b81)
 
 ### Captura de la infertaz
 #### Pestaña príncipal
