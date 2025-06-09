@@ -3585,7 +3585,7 @@
         "id": "8e600359261c020d",
         "type": "subflow:599c1d1ebfc1a92c",
         "z": "9a63bb3a153bd227",
-        "name": "",
+        "name": "tabla mediciones_sensor_a",
         "env": [
             {
                 "name": "Fixed_Statement",
@@ -3593,8 +3593,8 @@
                 "type": "str"
             }
         ],
-        "x": 326,
-        "y": 99,
+        "x": 400,
+        "y": 100,
         "wires": [
             []
         ]
@@ -3631,7 +3631,7 @@
         "id": "ce8501d6004a6195",
         "type": "subflow:599c1d1ebfc1a92c",
         "z": "9a63bb3a153bd227",
-        "name": "",
+        "name": "tabla mediciones_sensor_b",
         "env": [
             {
                 "name": "Fixed_Statement",
@@ -3639,7 +3639,7 @@
                 "type": "str"
             }
         ],
-        "x": 330,
+        "x": 400,
         "y": 140,
         "wires": [
             []
@@ -3649,7 +3649,7 @@
         "id": "5c9442d97af3cb01",
         "type": "subflow:599c1d1ebfc1a92c",
         "z": "9a63bb3a153bd227",
-        "name": "",
+        "name": "tabla mediciones_sensor_c",
         "env": [
             {
                 "name": "Fixed_Statement",
@@ -3657,7 +3657,7 @@
                 "type": "str"
             }
         ],
-        "x": 330,
+        "x": 400,
         "y": 180,
         "wires": [
             []
@@ -3667,7 +3667,7 @@
         "id": "ec81789b4e74ca20",
         "type": "subflow:599c1d1ebfc1a92c",
         "z": "9a63bb3a153bd227",
-        "name": "",
+        "name": "tabla incertidumbres_sensores",
         "env": [
             {
                 "name": "Fixed_Statement",
@@ -3675,7 +3675,7 @@
                 "type": "str"
             }
         ],
-        "x": 330,
+        "x": 410,
         "y": 220,
         "wires": [
             [
@@ -3687,7 +3687,7 @@
         "id": "c95bc4e56fea1c11",
         "type": "subflow:599c1d1ebfc1a92c",
         "z": "9a63bb3a153bd227",
-        "name": "",
+        "name": "datos default de la tabla",
         "env": [
             {
                 "name": "Fixed_Statement",
@@ -3695,7 +3695,7 @@
                 "type": "str"
             }
         ],
-        "x": 470,
+        "x": 670,
         "y": 220,
         "wires": [
             []
