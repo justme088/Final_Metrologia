@@ -78,10 +78,7 @@ Desarrollar un sistema portátil de monitoreo y visualización en tiempo real de
 
 ### Captura de la infertaz
 #### Pestaña príncipal
-![Sensor](https://github.com/user-attachments/assets/46a1ac6d-45a2-4e42-abe4-123e44ff7706)
+![Sensor](https://github.com/user-attachments/assets/516cde06-45c4-482a-a68e-59cf42ced4de)
 
 #### Pestaña de la cámara
 ![Camara](https://github.com/user-attachments/assets/f76f7399-90d1-47fc-bcd6-ea09ab57a098)
-
-
-
