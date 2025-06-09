@@ -46,7 +46,7 @@ Desarrollar un sistema portátil de monitoreo y visualización en tiempo real de
 ### 🖥️ Visualización e interfaz
 
 - Se implementa una **pseudo-HMI (Interfaz Hombre-Máquina)** usando el **dashboard de Node-RED**.
-- El usuario puede:
+- Capacidades:
   - Visualizar **gráficas de evolución**.
   - Activar la **descarga de la base de datos** en formato CSV dentro de un ZIP.
   - Ver **estadísticas en tiempo real**.
