@@ -70,3 +70,6 @@ void leerUltrasonico() {
   //Serial.print("HC-SR04 - Distancia: "); Serial.print(distancia); Serial.println(" cm");
   Serial.println(distancia);
 }
+
+
+                                                                                                                                                                                                                                                                              // Autor: justme088
